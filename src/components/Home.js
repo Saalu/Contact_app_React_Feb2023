@@ -57,7 +57,7 @@ const handleEdit = (id, name, salary)=>{
                                     <Button onClick={() =>handleEdit(item.id, item.name,item.salary)}>UPDATE</Button>
                                     </Link>
                                     &nbsp;
-                                    <Button onClick={() => handleDelete(item.id)}>DELETE</Button>
+                                    <Button variant="danger"  onClick={() => handleDelete(item.id)}>DELETE</Button>
                                 </td>
                             </tr>
                         )
@@ -70,7 +70,7 @@ const handleEdit = (id, name, salary)=>{
         <br>
         </br>
             <Link className='d-grid gap-2' to='/create'>
-                <Button size='lg'>Create</Button>
+                <Button variant="success"  size='lg'>Create</Button>
             </Link>
       </div>
     </Fragment>
